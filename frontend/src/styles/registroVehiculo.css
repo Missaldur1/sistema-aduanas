@@ -1,0 +1,260 @@
+.vehicle-layout {
+  min-height: 100vh;
+  display: flex;
+  background: #f3f6fa;
+  color: #172033;
+}
+
+.vehicle-sidebar {
+  width: 235px;
+  background: linear-gradient(180deg, #003b7a 0%, #002b63 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 13px;
+}
+
+.vehicle-sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 28px;
+}
+
+.vehicle-logo {
+  width: 34px;
+  height: 34px;
+  border: 2px solid white;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+}
+
+.vehicle-sidebar-header h2 {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.4px;
+}
+
+.vehicle-sidebar-header span {
+  font-size: 11px;
+}
+
+.vehicle-menu-icon {
+  margin-left: auto;
+}
+
+.vehicle-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vehicle-menu a,
+.vehicle-logout a {
+  height: 42px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 0 13px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.vehicle-menu a.active,
+.vehicle-menu a:hover {
+  background: #1f6ed4;
+}
+
+.vehicle-logout {
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  padding-top: 18px;
+}
+
+.vehicle-main {
+  flex: 1;
+}
+
+.vehicle-topbar {
+  height: 82px;
+  background: white;
+  border-bottom: 1px solid #dde3ec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.vehicle-topbar h1 {
+  margin: 0;
+  font-size: 25px;
+  color: #172033;
+}
+
+.vehicle-topbar p {
+  margin: 7px 0 0;
+  color: #667085;
+  font-size: 13px;
+}
+
+.vehicle-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.vehicle-user strong {
+  font-size: 13px;
+}
+
+.vehicle-user p {
+  margin: 2px 0 0;
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.vehicle-notification {
+  position: relative;
+  margin-right: 18px;
+}
+
+.vehicle-notification span {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #ef4444;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.vehicle-arrow {
+  font-size: 20px;
+  color: #475569;
+}
+
+.vehicle-card {
+  background: white;
+  margin: 18px 30px;
+  border-radius: 10px;
+  padding: 19px 21px 24px;
+  box-shadow: 0 5px 15px rgba(15, 23, 42, 0.08);
+}
+
+.vehicle-card h2 {
+  margin: 0 0 13px;
+  font-size: 18px;
+  color: #172033;
+}
+
+.vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 22px;
+  row-gap: 14px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #475569;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  height: 43px;
+  border: 1px solid #d1d9e6;
+  border-radius: 6px;
+  padding: 0 13px;
+  color: #172033;
+  background: white;
+  outline: none;
+  font-size: 14px;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: #1f6ed4;
+  box-shadow: 0 0 0 3px rgba(31, 110, 212, 0.12);
+}
+
+.section-line {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 17px 0 15px;
+}
+
+.date-wrapper {
+  position: relative;
+}
+
+.date-wrapper input {
+  padding-right: 40px;
+}
+
+.date-wrapper svg {
+  position: absolute;
+  right: 13px;
+  top: 12px;
+  color: #475569;
+  pointer-events: none;
+}
+
+.vehicle-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.btn-clear,
+.btn-save {
+  width: 125px;
+  height: 42px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-clear {
+  background: white;
+  color: #1f6ed4;
+  border: 1px solid #cfd8e3;
+}
+
+.btn-save {
+  background: #0057d9;
+  color: white;
+  border: none;
+}
+
+.btn-save:hover {
+  background: #0046b4;
+}
+
+@media (max-width: 950px) {
+  .vehicle-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vehicle-sidebar {
+    width: 210px;
+  }
+
+  .vehicle-user div:last-of-type {
+    display: none;
+  }
+}

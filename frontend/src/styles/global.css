@@ -1,0 +1,229 @@
+.login-screen {
+  min-height: 100vh;
+  background: linear-gradient(rgba(240, 245, 250, 0.45), rgba(240, 245, 250, 0.45)),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.login-label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #002f66;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 12px 28px;
+  border-radius: 0 0 12px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.login-container {
+  width: 1100px;
+  min-height: 560px;
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.login-blue {
+  background: linear-gradient(160deg, #002b63, #003f8f);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  padding: 40px;
+}
+
+.aduanas-icon {
+  width: 110px;
+  height: 110px;
+  border: 5px solid white;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.login-blue h1 {
+  font-size: 42px;
+  margin: 0;
+}
+
+.login-blue h2 {
+  font-size: 28px;
+  margin: 0 0 35px;
+  font-weight: 400;
+}
+
+.login-blue h3 {
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 0 0 25px;
+}
+
+.login-blue p {
+  font-size: 20px;
+}
+
+.login-white {
+  padding: 70px 90px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-white h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 35px;
+}
+
+.login-white label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  color: #374151;
+}
+
+.input-box {
+  height: 52px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  gap: 12px;
+  margin-bottom: 22px;
+  color: #64748b;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+}
+
+.login-button {
+  width: 100%;
+  height: 52px;
+  background: #0057d9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.login-button:hover {
+  background: #003f9e;
+}
+
+.login-white hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 32px 0 22px;
+}
+
+.login-white h4 {
+  margin-bottom: 15px;
+  color: #374151;
+}
+
+.instituciones-login {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.institucion-card {
+  height: 105px;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.institucion-card:hover,
+.institucion-card.active {
+  border: 2px solid #0057d9;
+}
+
+.mini-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 24px;
+}
+
+.mini-icon.blue {
+  background: #003b7a;
+}
+
+.mini-icon.green {
+  background: #14804a;
+}
+
+.login-white small {
+  text-align: center;
+  color: #9ca3af;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .login-container {
+    width: 92%;
+    grid-template-columns: 1fr;
+  }
+
+  .login-blue {
+    padding: 35px;
+  }
+
+  .login-white {
+    padding: 40px;
+  }
+
+  .login-label {
+    font-size: 20px;
+  }
+}
